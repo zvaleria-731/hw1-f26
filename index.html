@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Do no make any changes to this file, but you should still review the tags to make sure that you are familiar with them. -->
+
+<!-- Note this page has 0 bugs -->
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport meta tag helps the page scale properly on phones,tablets, laptops, and desktop screens. -->
+		<link rel="icon" href="images/ann_arbor.ico">
+     <!-- Link to the favicon image -->
+	<link rel="stylesheet" href="css/reset.css">
+    <!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/style.css">
+    <!-- Link to the stylesheet -->
+  <title>Ann Arbor Art Museum</title>
+<!-- The <title> appears in the browser tab and is used by search engines and assistive technologies. It should clearly describe the page.-->
+
+</head>
+
+<body>
+  <!-- All of the visible code in the page belongs in the body tag -->
+
+  <header>
+    <!--The <header> landmark usually contains introductory content such as the site name, page heading, logo, and main navigation.-->
+    <h1>Ann Arbor Art Museum</h1>
+
+    <nav>
+    <!-- The <nav> element identifies a navigation landmark.-->
+
+      <ul>
+    <!--Navigation menus are often coded as unordered lists because they contain a list of links. -->
+        <li class="active"><a href="index.html">Home</a></li>
+        <!-- Since I am on the index file I added class = action to the link to index. You don't have to do it for all of the files but you can if you want to match our examples -->
+
+        <li><a href="exhibits.html">Current Exhibits</a></li>
+        <li><a href="hours.html">Hours and Admission</a></li>
+        <li><a href="visit.html">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--The <main> landmark contains the primary content of the page. There should only be one <main> element per page. -->
+    <section>
+    <!--The <section> element groups related content. -->
+
+      <h2>Welcome to the Ann Arbor Art Museum</h2>
+    <!-- <h2> elements are major section headings. Heading levels should follow a logical order: h1, then h2, then h3.-->
+
+      <p>The Ann Arbor Art Museum celebrates the art, history, neighborhoods, and creative communities of Ann Arbor, Michigan. Exhibits connect local places such as the Huron River, downtown Ann Arbor, Kerrytown, and the University of Michigan campus with larger conversations about art and culture.</p>
+    <!-- The <p> element defines a paragraph of text.-->
+
+
+      <figure>
+    <!-- The <figure> element groups media, such as an image, with an optional caption. It is useful when an image and its caption belong together. -->
+        <img
+          src="images/Nickels_Arcade_at_Night,_Ann_Arbor,_Michigan.JPG"
+          alt="The covered walkway of Nickels Arcade in Ann Arbor, Michigan"
+          width="800"
+          height="500">
+        <!--The <img> element displays an image. The src attribute gives the file path to the image.The alt attribute provides alternative text for users who cannot see the image. Good alt text describes the meaningful content or function of the image.-->
+        <figcaption>
+          Nickels Arcade is one of Ann Arbor’s recognizable pedestrian spaces near downtown and the University of Michigan campus.
+        </figcaption>
+         <!-- The <figcaption> provides a visible caption for the image. Captions are helpful for all users and can add context beyond alt text. -->
+      </figure>
+    </section>
+
+    <section>
+      <h2>About the Museum</h2>
+
+      <p>The museum features rotating exhibitions, community programs, student learning opportunities, and events focused on art in everyday life. Visitors can explore paintings, photographs, public art, maps, posters,and objects connected to Ann Arbor’s cultural identity.</p>
+
+      <p> The museum welcomes residents, students, families, researchers, and visitors who want to learn more about the city through visual culture. </p>
+    </section>
+
+    <section>
+      <h2>Featured Ann Arbor Themes</h2>
+
+      <p>
+        Exhibits often focus on places and traditions that shape life in Ann Arbor.
+      </p>
+
+      <ul>
+    <!-- The <ul> element creates an unordered list. Use unordered lists when the order of items is not critical. -->
+        <li>The Huron River and local parks</li>
+        <!-- Each <li> element is a list item.-->
+        <li>Downtown Ann Arbor streets, murals, and theaters</li>
+        <li>Kerrytown markets, shops, and neighborhood design</li>
+        <li>University of Michigan campus life and creative exchange</li>
+      </ul>
+
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Law_Quad_2009.JPG/960px-Law_Quad_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          alt="Stone buildings surrounding a grassy courtyard at the University of Michigan Law Quadrangle"
+          width="800"
+          height="500">
+           <!-- Note: Your image source can also be a url it doesn't have to be a file you've uploaded to your github-->
+        <figcaption>
+          The University of Michigan campus is an important part of Ann Arbor’s artistic and cultural landscape.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Museum Hours</h2>
+
+      <p>
+        The museum is open most days of the week, with extended hours on Thursday evenings. Visitors should check the exhibits, hours, and visit pages for more detailed information.
+      </p>
+
+      <table>
+        <!--The <table> element is used for tabular data. Tables should not be used for general page layout. -->
+        <caption>Weekly museum hours and general admission</caption>
+        <!-- The <caption> gives the table a title or description.It helps users understand what information the table contains. -->
+
+        <thead>
+         <!-- The <thead> groups the header row of the table.-->
+          <tr>
+            <!--The <tr> element defines a table row. -->
+            <th scope="col">Day</th>
+            <!-- The <th> element defines a table header cell. scope="col" tells assistive technologies that the header applies to all cells in that column. -->
+            <th scope="col">Hours</th>
+            <th scope="col">General Admission</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <!--The <tbody> groups the main body rows of the table. -->
+          <tr>
+            <th scope="row">Monday</th>
+        <!--scope="row" tells assistive technologies that this header applies to all cells in that row. -->
+            <td>Closed</td>
+            <!-- The <td> element defines a standard table data cell.-->
+            <td>Not available</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Tuesday - Friday</th>
+            <td>10:00 AM – 5:00 PM</td>
+            <td>$12</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Saturday</th>
+            <td>9:00 AM – 6:00 PM</td>
+            <td>$14</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Sunday</th>
+            <td>12:00 PM – 5:00 PM</td>
+            <td>$10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Plan a Visit</h2>
+
+      <p>
+        The museum is located near downtown Ann Arbor, close to restaurants, bookstores, public transportation, parks, and University of Michigan buildings. Visitors may want to allow extra travel time during football weekends, festivals, and major campus events.
+      </p>
+
+      <p>
+        For more details, visit the exhibits, hours, and planning pages using the navigation menu above.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <!--The <footer> landmark contains information about the page or organization,such as copyright, contact information, related links, or policies. -->
+    <p> &copy; 2026 Ann Arbor Art Museum. All rights reserved.</p>
+      <!-- &copy; is an HTML character entity that displays the copyright symbol. -->
+
+    <p>
+      Contact us at
+      <a href="mailto:info@annarborartmuseum.example">info@annarborartmuseum.example</a>
+        <!-- A mailto link opens the user's default email application.  -->
+      or call
+      <a href="tel:+17345551234">734-555-1234</a>.
+         <!-- A tel link can start a phone call on devices that support calling.-->
+    </p>
+  </footer>
+</body>
+</html>

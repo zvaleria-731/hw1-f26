@@ -1,0 +1,122 @@
+    /*CSS controls the visual presentation of the page.*/
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      color: #222;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #14345c;
+      color: #fff;
+    }
+
+    /*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+/*Make the h2 heading larger than other headings*/
+h2{
+	font-size: 1.5em; 
+	font-weight: bold;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+/* set specific styling for navigation links */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    nav a:focus,
+    nav a:hover {
+      text-decoration-thickness: 0.2em;
+    }
+
+    /* set styling for current page in navigation - based on which one has class of active */
+.active a{
+	background: white;
+  text-transform: uppercase;
+	text-align: center;
+  color:#14345c
+}
+section {
+      margin-bottom: 2rem;
+    }
+
+/* Setting up every other section to have a different color */
+    section:nth-child(odd){
+      background-color: #14345c;
+      color: white;
+    }
+/*Add borders around the main components and some space too*/
+header, nav, main, footer{
+	border: 3px solid black;
+	margin: 10px 0;
+}
+    /*
+      Images should be flexible so they do not overflow their containers on smaller screens.
+    */
+    img {
+      max-width: 45%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+    figure {
+      margin: 1.5rem 0;
+    }
+
+/* adding a list style for other links outside the navigation */
+ul{
+  list-style-type: disc;
+}
+    figcaption {
+      font-size: 0.75rem;
+      margin: 0.5rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 850px;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border: 1px solid #777;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e6eef7;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      border: 5px solid grey;
+    }
